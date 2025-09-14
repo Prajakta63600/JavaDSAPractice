@@ -21,8 +21,8 @@ public class ZeroFromNonZero {
 		{
 			if(num[i]==0)
 			{
-				System.out.println("zeros in array are: "+num[i]);
-				break;
+				
+				
 			}
 		}
 
