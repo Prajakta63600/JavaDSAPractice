@@ -19,7 +19,7 @@ public class duplicateElementFromArrayList {
 		
 		HashSet<String> set = new HashSet<String>(mylist);
 		
-		//System.out.println(set);
+		System.out.println(set);
 		
 		ArrayList<String> Noduplictae = new ArrayList<String>(set);
 		
