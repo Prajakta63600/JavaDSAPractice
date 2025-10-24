@@ -1,5 +1,6 @@
 package JavaApnaCollege;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ZeroFromNonZero {
@@ -16,14 +17,23 @@ public class ZeroFromNonZero {
 			num[i] = sc.nextInt();
 		}
 		
+		int pos = 0;
 		
 		for(int i=0; i<size; i++)
 		{
-			if(num[i]==0)
+			if(num[i]>0)
 			{
-				
-				
+				num[pos]= num[i];
+				pos++;
 			}
+		}
+		
+		if(pos<num.length) {
+			for(int i=pos; i<num.length; i++)
+			{
+				num[i] = 0;
+			}
+			System.out.println(Arrays.toString(num));
 		}
 
 	}

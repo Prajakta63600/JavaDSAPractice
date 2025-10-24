@@ -1,5 +1,6 @@
 package JavaApnaCollege;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class reverseStringAgain {
@@ -9,15 +10,21 @@ public class reverseStringAgain {
 		System.out.println("Enter a String");
 		String str = sc.next();
 		
-		String rev = "";
+//		String rev = "";
+//		
+//		for(int i=str.length()-1; i>=0; i--)
+//		{
+//			rev += str.charAt(i); 
+//		}
+//		System.out.println(rev);
+//		
 		
-		for(int i=str.length()-1; i>=0; i--)
+		char[] chars = str.toCharArray();
+		for(int i=chars.length-1; i>=0; i--)
 		{
-			rev += str.charAt(i); 
+			 System.out.print(chars[i]);
 		}
-		System.out.println(rev);
-		
-
+	
 	}
 
 }
